@@ -1,0 +1,64 @@
+body {
+    background: #EBDEF0; 
+    overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.head{
+  height: 100px;
+  width: 100px;
+  background: #AF7AC5; 
+  border-radius: 50%;
+  box-shadow: inset 2px -4px 18px #7D3C98;
+  transition: 0.5s;
+  
+}
+
+.right_eye{
+  
+  position: relative;
+  height: 8px;
+  width: 8px;
+  background: black;
+  border-radius: 50%;
+  animation: eyeBlink 3s linear infinite;
+  top: 38px;
+  left: 63px;
+  
+}
+.left_eye{
+  position: relative;
+  height: 8px;
+  width:8px;
+  background: black;
+  top: 30px;
+  left: 29px;
+  border-radius: 50%;
+  animation: eyeBlink 3s linear infinite;
+}
+
+@keyframes eyeBlink {
+  0% , 30% , 56% , 100% {
+    transform: scale(1);
+  }
+  40% , 45% {
+    transform: scale(1,0);
+  }
+}
+.mouth {
+  position: relative;
+  height: 1px;
+  width: 20px;
+  background: transparent;
+  border-bottom: 2px solid black;
+  top: 42px;
+  left: 40px;
+  
+  
+}
